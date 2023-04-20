@@ -12,7 +12,6 @@ function App() {
     <Jumbo>
     </Jumbo>
     <Strips></Strips>
-<hello></hello>
     </>
 
   );
