@@ -1,0 +1,38 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+  }
+  .search-header {
+    display: flex;
+  }
+  .search-text {
+    margin-right: 10px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+  #search-box {
+    height: 25px;
+  }
+  #search-box[placeholder] {
+    line-height: 5px;
+    font-size: 25px;
+    border-radius: 25px;
+  }
+  element {
+	padding: 0 23px;
+}
+#search-box {
+	height: 25px;
+	border-radius: 9px;
+}
+dl, ol, ul {
+	margin-top: 0;
+	margin-bottom: -39rem;
+}

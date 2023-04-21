@@ -4,17 +4,27 @@ import Navbaar from './Navbaar';
 import Jumbo from './Jumbo'
 import './Style.css';
 import Strips from './Strips';
-import "./styles.css";
+import Footer from './Footer';
 
 
-export default function App() {
- return(
-<>
+
+function App() {
+  return (
+    <>
     <Navbaar></Navbaar>
     <Jumbo>
     </Jumbo>
     <Strips></Strips>
-    </>
-  )
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
+    <Footer></Footer>
+   </>
+
+
+  );
 }
 
+export default App;

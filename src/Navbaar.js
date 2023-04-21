@@ -1,20 +1,46 @@
-import React from 'react'
+
 //  import Container from 'react-bootstrap/Container';
     import Nav from 'react-bootstrap/Nav';
     import Navbar from 'react-bootstrap/Navbar';
     import Button from 'react-bootstrap/Button';
+    // import Form from 'react-bootstrap/Form';
+    import "./styles.css";
+import React, { useState } from "react";
 export default function Navbaar() {
+  const itemList = [
+    "IT",
+    "TECH",
+    "WEB DEVELOP",
+    "FULL STACK",
+    "JS REACT",
+    "JS QUERY",
+    "ANGULAR",
+    "NODE JS"
+  ];
+
+  const [filteredList, setFilteredList] = new useState(itemList);
+
+  const filterBySearch = (event) => {
+    // Access input value
+    const query = event.target.value;
+    // Create copy of item list
+    var updatedList = [...itemList];
+    // Include all elements which includes the search query
+    updatedList = updatedList.filter((item) => {
+      return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    });
+    // Trigger render with updated values
+    setFilteredList(updatedList);
+  };
+
   return (
   <nav>
           <Navbar expand="lg" className="bg-danger px-1 py-4">
             <Navbar.Brand href="#">
-              <img
-                src="https://o.remove.bg/downloads/95d45bd9-5e80-4a70-8c54-c07ba29586e4/trff-removebg-preview.png"
-                alt="logo"
-                height="80"
-              />
+      
               CREATIVE
             </Navbar.Brand>
+        
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
               <Nav className="ms-auto text-info ">
@@ -32,6 +58,27 @@ export default function Navbaar() {
         </Button>
               </Nav>
             </Navbar.Collapse>
+            
+            <div className="App">
+      <div className="search-header">
+        <div className="search-text"></div>
+        <input id="search-box"  onChange={filterBySearch} /><Button variant="outline-dark">Search</Button>
+      </div>
+      <div id="item-list">
+        <ol>
+          {filteredList.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))} 
+        
+        </ol>
+       
+      </div>
+    </div>
+              
+            
+        
+        
+          
           </Navbar>
           </nav>
         )
