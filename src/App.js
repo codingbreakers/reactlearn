@@ -4,7 +4,7 @@ import Navbaar from './Navbaar';
 import Jumbo from './Jumbo'
 import './Style.css';
 import Strips from './Strips';
-
+import Footer from './Footer';
 function App() {
   return (
     <>
@@ -12,6 +12,8 @@ function App() {
     <Jumbo>
     </Jumbo>
     <Strips></Strips>
+    <Footer></Footer>
+  
     </>
 
   );
