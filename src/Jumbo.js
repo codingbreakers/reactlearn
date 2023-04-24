@@ -4,7 +4,7 @@ import code from './code.jpeg'
 
 export default function Jumbo() {
   return (
-    <><div className="container-fluid">
+    <><div className="container-fluid ">
     <div className="row g-0">
       <div className="col-xl">
       <div className="jumbotron mx-4 ">

@@ -4,7 +4,9 @@ import Navbaar from './Navbaar';
 import Jumbo from './Jumbo'
 import './Style.css';
 import Strips from './Strips';
-// import Footer from './Footer';
+import Footer from './Footer';
+import Services from './Services'
+import Contact from './Contact'
 function App() {
   return (
     <>
@@ -12,7 +14,10 @@ function App() {
     <Jumbo>
     </Jumbo>
     <Strips></Strips>
-    {/* <Footer></Footer> */}
+    <Services></Services>
+    <Contact></Contact>
+    <Footer></Footer>
+
   
     </>
 

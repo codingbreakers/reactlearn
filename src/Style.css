@@ -41,6 +41,21 @@
         text-decoration-color: azure;
         color: white;
     }
-.body{background-color:#212529;}
 
+    .card{background-image:url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');}
+    .card1{background-image:url('https://images.pexels.com/photos/220118/pexels-photo-220118.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200');}
 
+    .text-white{text-decoration: none;}
+
+    .map-container {
+        height: 230px;
+        position: relative;
+      }
+
+      .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }

@@ -43,16 +43,16 @@ export default function Navbaar(props) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
               <Nav className="ms-auto text-info ">
-                <Nav.Item className='mx-3'>
-                  <Nav.Link href="#"> {props.about}</Nav.Link>
-                </Nav.Item>
-                <Nav.Item className='mx-3'>
-                  <Nav.Link href="#"> {props.service}</Nav.Link>
+                <Nav.Item className='mx-2'>
+                  <Nav.Link href="#">{props.about}</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='mx-2'>
-                  <Nav.Link href="#"> {props.project}</Nav.Link>
+                  <Nav.Link href="#">{props.service}</Nav.Link>
                 </Nav.Item>
-                <Button variant="dark" size="lg" className=' mx-4'> {props.button}
+                <Nav.Item className='mx-2'>
+                  <Nav.Link href="#">{props.project}</Nav.Link>
+                </Nav.Item>
+                <Button variant="dark" size="lg" className=' mx-4'>{props.button}
          
         </Button>
               </Nav>
