@@ -10,7 +10,7 @@ import Contact from './Contact'
 function App() {
   return (
     <>
-    <Navbaar brand='Creative' service='Service'  button=' Schedule a Class' project='Project' about='About'></Navbaar>
+    <Navbaar brand='CREATIVE' service='Service'  button=' Schedule a Class' project='Project' about='About'></Navbaar>
     <Jumbo>
     </Jumbo>
     <Strips></Strips>

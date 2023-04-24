@@ -5,6 +5,7 @@
     import Button from 'react-bootstrap/Button';
     // import Form from 'react-bootstrap/Form';
     import "./styles.css";
+    import img from './img.png'
 // import React, { useState } from "react";
 export default function Navbaar(props) {
 //   const itemList = [
@@ -36,8 +37,8 @@ export default function Navbaar(props) {
   return (
   <nav>
   
-          <Navbar expand="lg" className=" float-right bg-danger px-1 py-4">
-            <Navbar.Brand href="#">
+          <Navbar expand="lg" className="bg-danger px-1 py-4">
+            <Navbar.Brand href="#"><img src={img} alt=""  height='80vh'/>
       {props.brand}
             </Navbar.Brand>
         

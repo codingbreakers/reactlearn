@@ -59,7 +59,5 @@
         width: 100%;
         position: absolute;
       }
-      @media (max-width: 600px) {
-    {
-        
-    }}
+      
+      .mx-2{font-weight: bolder;}
