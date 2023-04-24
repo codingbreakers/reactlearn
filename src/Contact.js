@@ -5,7 +5,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 export default function Contact() {
   return (
     <>
-    <div className="container-fluid my-5 z-depth-1">
+    <div className="container-fluid my-5 z-depth-1 bg-light text-dark">
   <section className="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
     <div className="row d-flex justify-content-center">
       <div className="col-md-6 text-center">

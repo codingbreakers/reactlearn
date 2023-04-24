@@ -35,14 +35,15 @@ export default function Navbaar(props) {
 
   return (
   <nav>
-          <Navbar expand="lg" className="bg-danger px-1 py-4">
+  
+          <Navbar expand="lg" className=" float-right bg-danger px-1 py-4">
             <Navbar.Brand href="#">
       {props.brand}
             </Navbar.Brand>
         
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
-              <Nav className="ms-auto text-info ">
+              <Nav className="ms-auto text-info">
                 <Nav.Item className='mx-2'>
                   <Nav.Link href="#">{props.about}</Nav.Link>
                 </Nav.Item>
@@ -57,7 +58,12 @@ export default function Navbaar(props) {
         </Button>
               </Nav>
             </Navbar.Collapse>
-            
+
+            {/* <div className="search-bar-container">
+        <SearchBar setResults={setResults} />
+        {results && results.length > 0 && <SearchResultsList results={results} />}
+      </div>
+             */}
             {/* <div className="App">
       <div className="search-header">
         <div className="search-text"></div> */}
@@ -82,4 +88,6 @@ export default function Navbaar(props) {
           </nav>
         )
         }
+        
+
         

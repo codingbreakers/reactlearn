@@ -7,13 +7,15 @@ export default function Footer() {
   return (
     <>
    <section class="">
-  <footer class="bg-dark text-white text-center text-md-start">
+  <footer class="bg-danger text-white text-center text-md-start">
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase">CREATIVE</h5>
           <p>
-           Our agency basically create both types of webiste static and responsive website and We do both frontend and backend work We have sample projects for our clients .Our team solve query of clients and with one on one doubt support.      </p>
+           Our agency basically create both types of webiste static and responsive <br /> website and We do both frontend and
+           <br /> backend work We have sample projects for our clients . <br />
+           Our team solve query of clients and with one on one doubt support.      </p>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Social Platforms</h5>
