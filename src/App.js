@@ -5,20 +5,19 @@ import Jumbo from './Jumbo'
 import './Style.css';
 import Strips from './Strips';
 import Footer from './Footer';
-import Services from './Services'
-import Contact from './Contact'
-function App() {
+import Services from './Services' 
+import React from 'react';
+import Contact from './Contact';
+  function App() {
   return (
     <>
-    <Navbaar brand='CREATIVE' service='Service'  button=' Schedule a Class' project='Project' about='About'></Navbaar>
+    <Navbaar brand='CREATIVE' service='Service'  button=' Schedule a Class' project='Project' about='About' ></Navbaar>
     <Jumbo>
     </Jumbo>
     <Strips></Strips>
     <Services></Services>
     <Contact></Contact>
     <Footer></Footer>
-
-  
     </>
 
   );

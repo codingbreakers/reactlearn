@@ -61,3 +61,7 @@
       }
       
       .mx-2{font-weight: bolder;}
+
+      .btn-primary {
+        height: min-content;
+    }
