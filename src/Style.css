@@ -65,3 +65,52 @@
       .btn-primary {
         height: min-content;
     }
+    .results-list {
+        width: 80%;
+        background-color: white;
+        display: flex;
+        color: #dc3545;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 1rem;
+        max-height: 50px;
+        overflow-y: scroll;
+      }
+      
+      .search-result {
+        padding: 10px 20px;
+      }
+      
+      .search-result:hover {
+        background-color: #efefef;
+      }
+      
+      .input-wrapper {
+        width: 95%;
+        height: 2.5rem;
+        border: none;
+        border-radius: 10px;
+        padding: 0 15px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+      }
+      
+      input {
+        background-color: transparent;
+        border: none;
+        height: 75%;
+        font-size: 1.25rem;
+        width: 100%;
+        margin-left: 5px;
+      }
+      
+      input:focus {
+        outline: none;
+      }
+      
+      #search-icon {
+        color: red;
+      }
