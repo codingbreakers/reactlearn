@@ -8,7 +8,10 @@ import Footer from './Footer';
 import Services from './Services' 
 import React from 'react';
 import Contact from './Contact';
+
+
   function App() {
+
   return (
     <>
     <Navbaar brand='CREATIVE' service='Service'  button=' Schedule a Class' project='Project' about='About' ></Navbaar>
@@ -18,6 +21,8 @@ import Contact from './Contact';
     <Services></Services>
     <Contact></Contact>
     <Footer></Footer>
+    
+      
     </>
 
   );

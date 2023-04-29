@@ -21,16 +21,16 @@ export default function Footer() {
           <h5 class="text-uppercase">Social Platforms</h5>
           <ul class="list-unstyled mb-0">
             <li>
-            <a href="#!" class="text-white"><FontAwesomeIcon icon={faLinkedin} size='lg' className='px-2'/>Linked in</a>
+            <a href="https://www.linkedin.com/in." class="text-white"><FontAwesomeIcon icon={faLinkedin} size='lg' className='px-2'/>Linked in</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><FontAwesomeIcon icon={faInstagramSquare} size='lg' className='px-2'/>Instagram</a>
+              <a href="https://instagram.com/" class="text-white"><FontAwesomeIcon icon={faInstagramSquare} size='lg' className='px-2'/>Instagram</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><FontAwesomeIcon icon={faFacebookSquare} size='lg' className='px-2'/>Facebook</a>
+              <a href="link https://www.facebook.com/" class="text-white"><FontAwesomeIcon icon={faFacebookSquare} size='lg' className='px-2'/>Facebook</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><FontAwesomeIcon icon={faGithubSquare} size='lg' className='px-2'/>Github</a>
+              <a href="https://github.com" class="text-white"><FontAwesomeIcon icon={faGithubSquare} size='lg' className='px-2'/>Github</a>
             </li>
           </ul>
         </div>

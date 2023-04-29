@@ -1,8 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faScissors } from '@fortawesome/free-solid-svg-icons'
+import validator from 'validator'
+
 export default function Contact() {
+
+// const [mail,setmail] = useState("")
+const [text,settext] = useState("")
+const [subject,setsubject] = useState("")
+
+function handle(){
+let newInput='';
+settext(newInput)
+setsubject(newInput)
+
+}
+
+const newhandle3=(e) =>{
+  settext(e.target.value)
+}
+
+const newhandle2=(e) =>{
+  setsubject(e.target.value)
+}
+
+const [emailError, setEmailError] = useState('')
+  function ValidateEmail(e){
+    var email = e.target.value
+    if (validator.isEmail(email)) {
+      setEmailError('✅')
+    } else {
+      setEmailError('❌') 
+    }
+  }
+
   return (
     <>
     <div className="container-fluid my-5 z-depth-1  text-dark">
@@ -16,18 +48,20 @@ export default function Contact() {
     <div className="row">
       <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
         <div className="md-form md-outline mt-3">
-          <input type="email" id="form-email" className="form-control"/>
-          <label for="form-email">E-mail</label>
+          <input type="email" id="form-email" className="form-control"  onChange={ValidateEmail} />
+          
+          <label for="form-email">E-mail {emailError}</label>
         </div>
         <div className="md-form md-outline">
-          <input type="text" id="form-subject" className="form-control"/>
+          <input type="text" id="form-subject" className="form-control" value={subject} onChange={newhandle2}/>
           <label for="form-subject">Subject</label>
         </div>
         <div className="md-form md-outline mb-3">
-          <textarea id="form-message" className="md-textarea form-control" rows="3"></textarea>
+          <textarea id="form-message" className="md-textarea form-control" rows="3" value={text} onChange={newhandle3}></textarea>
           <label for="form-message">How we can help?</label>
         </div>
         <button type="submit" className="btn btn-info btn-sm ml-0"><FontAwesomeIcon icon={faPaperPlane}/> Submit</button>
+        <button className='btn btn-info btn-sm ml-0 mx-4' onClick={(e) => { handle()}}><FontAwesomeIcon icon={faScissors}/> Clear</button>
       </div>
       <div className="col-lg-6 col-md-12 mb-0 mb-md-0">
           <div id="map-container-google-1" className="z-depth-1 map-container mb-4">
@@ -38,6 +72,7 @@ export default function Contact() {
     </div>
   </section>
 
-</div></>
+</div>
+</>
   )
-}
+  }

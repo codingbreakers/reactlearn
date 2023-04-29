@@ -6,12 +6,15 @@
     // import Form from 'react-bootstrap/Form';
     import "./styles.css";
     import img from './img.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
+import { SearchBar } from "./SearchBar.js";
+import { SearchResultsList } from "./SearchResultsList";
 
 
 export default function Navbaar(props) {
-
+  const [results, setResults] = useState([]);
   return (
   <nav>
   
@@ -32,7 +35,7 @@ export default function Navbaar(props) {
                 <Nav.Item className='mx-2'>
                   <Nav.Link href="#">{props.project}</Nav.Link>
                 </Nav.Item>
-                <div class="input-group py-2 mx-1">
+                {/* <div class="input-group py-2 mx-1">
   <div class="form-outline ">
     <input type="search" id="form1" class="form-control" />
     <label class="form-label" for="form1"></label>
@@ -40,7 +43,12 @@ export default function Navbaar(props) {
   <button type="button" class="btn btn-primary" size='sm'>
    <FontAwesomeIcon icon={faSearch} size="md"/>
   </button>
-</div>
+</div> */}
+
+<div className="search-bar-container">
+        <SearchBar setResults={setResults} />
+        {results && results.length > 0 && <SearchResultsList results={results} />}
+      </div>
               </Nav>
             </Navbar.Collapse>
 
