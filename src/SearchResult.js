@@ -1,4 +1,4 @@
-import "./SearchResult.css";
+import "./Style.css";
 
 export const SearchResult = ({ result }) => {
   return (

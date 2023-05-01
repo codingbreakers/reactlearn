@@ -1,4 +1,4 @@
-import "./SearchResultsList.css";
+import "./Style.css";
 import { SearchResult } from "./SearchResult";
 
 export const SearchResultsList = ({ results }) => {

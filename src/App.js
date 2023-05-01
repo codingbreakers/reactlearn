@@ -8,13 +8,22 @@ import Footer from './Footer';
 import Services from './Services' 
 import React from 'react';
 import Contact from './Contact';
+import { Route, Routes } from "react-router-dom";
+
 
 
   function App() {
 
   return (
-    <>
-    <Navbaar brand='CREATIVE' service='Service'  button=' Schedule a Class' project='Project' about='About' ></Navbaar>
+
+    <> <Navbaar brand='CREATIVE' service='Service'  button=' Schedule a Class' Contact='Contact' about='About' home='Home' ></Navbaar>
+          <Routes>
+          <Route path="/" />
+          <Route path="/About" element={Strips} />
+          <Route path="/Service" element={Services} />
+          <Route path="/Contact" element={Contact} />
+
+        </Routes>
     <Jumbo>
     </Jumbo>
     <Strips></Strips>

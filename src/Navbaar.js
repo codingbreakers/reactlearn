@@ -1,16 +1,14 @@
 
-//  import Container from 'react-bootstrap/Container';
     import Nav from 'react-bootstrap/Nav';
     import Navbar from 'react-bootstrap/Navbar';
-    // import Button from 'react-bootstrap/Button';
-    // import Form from 'react-bootstrap/Form';
     import "./styles.css";
     import img from './img.png'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 import { SearchBar } from "./SearchBar.js";
 import { SearchResultsList } from "./SearchResultsList";
+import { Link } from "react-router-dom";
+
+
 
 
 export default function Navbaar(props) {
@@ -26,24 +24,18 @@ export default function Navbaar(props) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
               <Nav className="ms-auto text-info">
-                <Nav.Item className='mx-2'>
-                  <Nav.Link href="#">{props.about}</Nav.Link>
+              <Nav.Item className='mx-2'>
+                  <Link to="/" className='nav-link'>{props.home}</Link>
                 </Nav.Item>
                 <Nav.Item className='mx-2'>
-                  <Nav.Link href="#">{props.service}</Nav.Link>
+                  <Link to="/About" className='nav-link'>{props.about}</Link>
                 </Nav.Item>
                 <Nav.Item className='mx-2'>
-                  <Nav.Link href="#">{props.project}</Nav.Link>
+                  <Link to="/Service" className='nav-link'>{props.service}</Link>
                 </Nav.Item>
-                {/* <div class="input-group py-2 mx-1">
-  <div class="form-outline ">
-    <input type="search" id="form1" class="form-control" />
-    <label class="form-label" for="form1"></label>
-  </div>
-  <button type="button" class="btn btn-primary" size='sm'>
-   <FontAwesomeIcon icon={faSearch} size="md"/>
-  </button>
-</div> */}
+                <Nav.Item className='mx-2'>
+                  <Link to="/Contact" className='nav-link'>{props.Contact}</Link>
+                </Nav.Item>
 
 <div className="search-bar-container">
         <SearchBar setResults={setResults} />
@@ -51,12 +43,6 @@ export default function Navbaar(props) {
       </div>
               </Nav>
             </Navbar.Collapse>
-
-               
-            
-        
-        
-          
           </Navbar>
           </nav>
         )
