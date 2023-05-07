@@ -6,7 +6,6 @@ import img from './img.png'
 import { useState,useRef} from "react";
 import { SearchBar } from "./SearchBar.js";
 import { SearchResultsList } from "./SearchResultsList";
-// import { Link } from "react-router-dom";
 import {Link} from 'react-scroll'
 import './Contact'
 import Contact from './Contact';

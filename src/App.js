@@ -1,10 +1,8 @@
 
-import Navbaar from './Navbaar';
 import './Style.css';
 import Footer from './Footer'; 
 import React from 'react';
-import './Navbaar'
-
+import  Navbaar from './Navbaar'
 export default function App()
 {
 return (  
