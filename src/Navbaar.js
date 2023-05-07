@@ -7,11 +7,10 @@ import { useState,useRef} from "react";
 import { SearchBar } from "./SearchBar.js";
 import { SearchResultsList } from "./SearchResultsList";
 import {Link} from 'react-scroll'
-import './Contact'
 import Contact from './Contact';
 import Services from './Services';
 import Homepage from './Homepage';
-import Strips from './About';
+import About from './About';
 
 
 export default function Navbaar() {
@@ -57,9 +56,8 @@ export default function Navbaar() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>  
-          
           <div ref={ref1}><Homepage></Homepage></div>
-          <div ref={ref2}><Strips></Strips></div>
+          <div ref={ref2}><About></About></div>
           <div ref={ref3}><Services></Services></div>
           <div ref={ref4}><Contact></Contact></div>
           </>

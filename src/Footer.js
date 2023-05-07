@@ -4,7 +4,7 @@ import {faFacebookSquare, faGithubSquare, faInstagramSquare, faLinkedin} from '@
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import './Style.css'
 import {Link} from 'react-scroll'
-export default function Footer(props) {
+export default function Footer() {
   return (
     <>
    <section className="">

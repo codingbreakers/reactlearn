@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Homepage(props) {
+export default function Homepage() {
     useEffect(()=>{
       Aos.init({duration:2000});
 
