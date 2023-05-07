@@ -1,15 +1,19 @@
-import React, {useEffect ,useState } from 'react'
+import React, {useState } from 'react'
 import './Style.css'
 import codek from './codek.jpg'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 export default function Strips() {
 
+useEffect(()=>{
+  Aos.init({duration:2000});
+
+},[]);
 
 
 const [alert, Setalert] = useState("Schedule a call")
-useEffect((e) => {
-window.confirm("WILL YOU STAY IN WEBSITE")
-},[])
 
 const handle = (e)=>{
   Setalert(<button class="btn btn-dnager" type="button">
@@ -21,8 +25,8 @@ const handle = (e)=>{
   return (
     
     <>
-<div className="container-fluid my-2">
-    <div className="row g-0 " >
+<div className="container-fluid my-2 " data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+    <div className="row g-0 ">
       <div className="col-xl pt-1">
       <img src={codek} className='img-fluid' alt="" />
       </div>

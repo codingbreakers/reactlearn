@@ -1,10 +1,19 @@
 import React from "react";
 import "./Style.css";
 // import { FontAwesomeIcon} from  '@fortawesome/react-fontawesome'
+import Aos from 'aos';
+ import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 export default function Services() {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+
+  },[]);
+
   return (
     <>
-      <div className="container-fluid my-2 ">
+      <div className="container-fluid my-2 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <section className="dark-grey-text text-center">
           <h3 className="text-center font-weight-bold mb-4 pb-2">OUR SERVICES</h3>
           <p className="text-center text-muted w-responsive mx-auto mb-5">

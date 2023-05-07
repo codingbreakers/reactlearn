@@ -3,7 +3,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebookSquare, faGithubSquare, faInstagramSquare, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import './Style.css'
-export default function Footer() {
+import {Link} from 'react-scroll'
+export default function Footer(props) {
   return (
     <>
    <section className="">
@@ -46,7 +47,7 @@ export default function Footer() {
     </div>
     <div className="text-center py-3">
       © 2023 Copyright :
-      <a className="text-white" href="https://mdbootstrap.com/"> Creative.com</a>
+      <Link to='/Navbaar' className="text-white text-size "> Creative.com</Link>
     </div>
   </footer>
 </section>

@@ -4,17 +4,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faScissors } from '@fortawesome/free-solid-svg-icons'
 import validator from 'validator'
 import './Navbaar'
+import Aos from 'aos';
+ import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 export default function Contact() {
 
-// const [mail,setmail] = useState("")
+  useEffect(()=>{
+    Aos.init({duration:2000});
+
+  },[]);
+
 const [text,settext] = useState("")
-// const [subject,setsubject] = useState("")
+const [subject,setsubject] = useState("")
 
 function handle(){
 let newInput='';
 settext(newInput)
-// setsubject(newInput)
+setsubject(newInput)
 
 }
 
@@ -22,9 +29,9 @@ const newhandle3=(e) =>{
   settext(e.target.value)
 }
 
-// const newhandle2=(e) =>{
-//   setsubject(e.target.value)
-// }
+const newhandle2=(e) =>{
+  setsubject(e.target.value)
+}
 
 const [emailError, setEmailError] = useState('')
   function ValidateEmail(e){
@@ -38,7 +45,7 @@ const [emailError, setEmailError] = useState('')
 
   return (
     <>
-    <div className="container-fluid my-5 z-depth-1  text-dark">
+    <div className="container-fluid my-5 z-depth-1  text-dark " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
   <section className="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
     <div className="row d-flex justify-content-center">
       <div className="col-md-6 text-center">
@@ -54,7 +61,7 @@ const [emailError, setEmailError] = useState('')
           <label htmlFor="form-email">E-mail {emailError}</label>
         </div>
         <div className="md-form md-outline">
-          <input type="text" id="form-subject" className="form-control" value={text} onChange={newhandle3}/>
+          <input type="text" id="form-subject" className="form-control" value={subject} onChange={newhandle2}/>
           <label htmlFor="form-subject">Subject</label>
         </div>
         <div className="md-form md-outline mb-3">
