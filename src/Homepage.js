@@ -10,7 +10,7 @@ export default function Jumbo() {
       <div className="jumbotron mx-4 ">
       <br />
   <h1 className="display- font-weight-bold">Branding & <br></br>website design agency</h1>
-  <p className="lead">We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital.</p>
+  <p className="lead py-2">We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital.</p>
   <p className="lead">
     <a className="btn btn-danger btn-lg" href="/" role="button">Learn more</a>
   </p>
