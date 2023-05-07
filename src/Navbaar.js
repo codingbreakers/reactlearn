@@ -10,7 +10,7 @@ import {Link} from 'react-scroll'
 import './Contact'
 import Contact from './Contact';
 import Services from './Services';
-import Jumbo from './Homepage';
+import Homepage from './Homepage';
 import Strips from './About';
 
 
@@ -58,7 +58,7 @@ export default function Navbaar() {
             </Navbar.Collapse>
           </Navbar>  
           
-          <div ref={ref1}><Jumbo></Jumbo></div>
+          <div ref={ref1}><Homepage></Homepage></div>
           <div ref={ref2}><Strips></Strips></div>
           <div ref={ref3}><Services></Services></div>
           <div ref={ref4}><Contact></Contact></div>
