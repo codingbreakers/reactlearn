@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 export default function About() {
 
 useEffect(()=>{
-  Aos.init({duration:2000});
+  Aos.init({duration:3000});
 
 },[]);
 
@@ -25,7 +25,7 @@ const handle = (e)=>{
   return (
     
     <>
-<div className="container-fluid my-2 " data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+<div className="container-fluid my-2 " data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" >
     <div className="row g-0 ">
       <div className="col-xl pt-1">
       <img src={codek} className='img-fluid' alt="" />
